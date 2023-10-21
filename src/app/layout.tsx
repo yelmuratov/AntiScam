@@ -25,13 +25,13 @@ export default function RootLayout({
                 <Link href={'/'}>AntiScam</Link>
               </h1>
               <ul className='hidden lg:flex items-center text-[18px] font-semibold pl-32'>
-                <li className='hover:underline  underline-offset-4 decoration-2 decoration-white py-2 rounded-lg px-5'>
+                <li className='nav__item select-none decoration-2 decoration-white py-2 rounded-lg px-5'>
                   <Link href='/'>Home</Link>
                 </li>
-                <li className='hover:underline underline-offset-4 decoration-2 decoration-white py-2 rounded-lg px-5'>
+                <li className='nav__item select-none decoration-2 decoration-white py-2 rounded-lg px-5'>
                   <Link href='/contact'>Contact</Link>
                 </li>
-                <li className='hover:underline underline-offset-4 decoration-2 decoration-white py-2 rounded-lg px-5'>
+                <li className='nav__item select-none decoration-2 decoration-white py-2 rounded-lg px-5'>
                   <Link href='/about'>About</Link>
                 </li>
               </ul>

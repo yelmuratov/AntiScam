@@ -14,3 +14,56 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.nav__item:hover,.nav__item.active{
+  background: radial-gradient(12441.24% 97.1% at 5.56% 79.01%, #EB568E 0%, #144EE3 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main__title{
+  background: radial-gradient(12441.24% 97.1% at 5.56% 79.01%, #EB568E 0%, #144EE3 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+.checkInput{
+  margin: 50px auto;
+  border-radius: 48px;
+  border: 4px solid #353C4A;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
+  user-select: none;
+}
+
+.checkInput.active{
+  border: 4px solid #f3e2e2;
+  box-shadow:1px
+}
+
+.checkInput input{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.checkButton{
+  display: flex;
+  width: 178px;
+  padding: 21px 25.047px 21px 25px;
+  border-radius: 48px;
+  border: 1px solid #144EE3;
+  box-shadow: 10px 9px 22px 0px rgba(20, 78, 227, 0.38);
+  font-weight: 600;
+  line-height: 18px; /* 112.5% */
+  transition: all .2s ease-in-out;
+}
+
+.checkButton:hover{
+  box-shadow: 14px 13px 27px 0px rgba(44, 95, 224, 0.38);
+}
