@@ -1,7 +1,9 @@
-const page = () => {
+import Title from "@/components/title"
+
+const MainPage = () => {
   return (
-    <h1>Hello World</h1>
+    <Title />
   )
 }
 
-export default page
+export default MainPage
