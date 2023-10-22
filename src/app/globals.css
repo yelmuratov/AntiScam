@@ -20,6 +20,12 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.dropdown__menu.active{
+  height: 160px;
+  backdrop-filter: blur(100px);
 }
 
 .main__title{
