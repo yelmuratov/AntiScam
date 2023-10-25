@@ -1,20 +1,29 @@
 'use client'
-import {useState} from 'react'
-import DropdownMenu from './dropdownMenu';
 
+import { useAppDispatch, useAppSelector } from '@/app/GlobalRedux/hooks';
+import DropdownMenu from './dropdownMenu';
+import { setIsOpen } from '@/app/GlobalRedux/Features/mainSlice/mainSlice';
 const BurgerButton = () => {
-  const [isOpen, setisOpen] = useState<boolean>(false);
+  const isOpen = useAppSelector(state => state.isOpen);
+  const dispatch = useAppDispatch();
   
+  const handleOpen = () => {
+    dispatch(setIsOpen(!isOpen));
+  }
+
   return (
     <>
-      <div className={`burger-menu select-none ${isOpen?'close':''} mt-3 lg:hidden md:hidden block`} onClick={()=>setisOpen(prev => !prev)}>
+      <div
+        className={`${isOpen ? 'close' : ''} burger-menu select-none mt-2 lg:hidden md:hidden block`}
+        onClick={handleOpen}
+      >
         <div className='bar bar--top'></div>
         <div className='bar bar--middle'></div>
         <div className='bar bar--bottom'></div>
       </div>
-      <DropdownMenu isOpen={isOpen} />
+      <DropdownMenu />
     </>
   )
 }
 
-export default BurgerButton;
+export default BurgerButton
